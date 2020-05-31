@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="EmployeeCardTableViewCell" customModule="ecommerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7c-lo-5aS">
+                        <rect key="frame" x="117" y="13" width="45" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufx-MB-qkg">
+                        <rect key="frame" x="117" y="55" width="30" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isR-cm-RL9">
+                        <rect key="frame" x="238" y="13" width="48" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raR-uk-tO6">
+                        <rect key="frame" x="223" y="55" width="63" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Nk9-Rx-jE3">
+                        <rect key="frame" x="16" y="14" width="70" height="60.5"/>
+                        <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="raR-uk-tO6" firstAttribute="leading" secondItem="Ufx-MB-qkg" secondAttribute="trailing" constant="76" id="3MI-HC-B1b"/>
+                    <constraint firstItem="raR-uk-tO6" firstAttribute="top" secondItem="isR-cm-RL9" secondAttribute="bottom" constant="21" id="5By-P9-Olx"/>
+                    <constraint firstItem="Ufx-MB-qkg" firstAttribute="leading" secondItem="Nk9-Rx-jE3" secondAttribute="trailing" constant="31" id="6bM-Ww-jcW"/>
+                    <constraint firstItem="t7c-lo-5aS" firstAttribute="leading" secondItem="Nk9-Rx-jE3" secondAttribute="trailing" constant="31" id="BFO-sb-7Jv"/>
+                    <constraint firstItem="isR-cm-RL9" firstAttribute="leading" secondItem="t7c-lo-5aS" secondAttribute="trailing" constant="76" id="GAI-cW-48F"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="raR-uk-tO6" secondAttribute="trailing" constant="18" id="HSQ-UA-g7X"/>
+                    <constraint firstItem="raR-uk-tO6" firstAttribute="top" secondItem="isR-cm-RL9" secondAttribute="bottom" constant="21" id="KNw-xF-pJ6"/>
+                    <constraint firstItem="raR-uk-tO6" firstAttribute="leading" secondItem="Ufx-MB-qkg" secondAttribute="trailing" constant="76" id="TSy-ow-hus"/>
+                    <constraint firstItem="isR-cm-RL9" firstAttribute="leading" secondItem="t7c-lo-5aS" secondAttribute="trailing" constant="76" id="Wra-Oq-3If"/>
+                    <constraint firstItem="Nk9-Rx-jE3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ZK9-tH-vtg"/>
+                    <constraint firstItem="Ufx-MB-qkg" firstAttribute="top" secondItem="t7c-lo-5aS" secondAttribute="bottom" constant="21" id="bMa-VX-VmX"/>
+                    <constraint firstItem="t7c-lo-5aS" firstAttribute="leading" secondItem="Nk9-Rx-jE3" secondAttribute="trailing" constant="31" id="iKJ-4P-dAo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ufx-MB-qkg" secondAttribute="bottom" constant="10" id="jgz-Ev-nHq"/>
+                    <constraint firstAttribute="bottom" secondItem="Nk9-Rx-jE3" secondAttribute="bottom" constant="21" id="jlH-88-jTi"/>
+                    <constraint firstItem="Nk9-Rx-jE3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="lyg-2p-pGC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="raR-uk-tO6" secondAttribute="bottom" constant="10" id="mBn-wF-cCh"/>
+                    <constraint firstAttribute="trailing" secondItem="isR-cm-RL9" secondAttribute="trailing" constant="34" id="mmS-JY-4lA"/>
+                    <constraint firstItem="Ufx-MB-qkg" firstAttribute="top" secondItem="t7c-lo-5aS" secondAttribute="bottom" constant="21" id="oT3-kk-MtO"/>
+                    <constraint firstItem="isR-cm-RL9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="wwe-KD-S7Q"/>
+                    <constraint firstItem="t7c-lo-5aS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="xtC-S1-XPz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="employeeAge" destination="Ufx-MB-qkg" id="OPt-iT-nHs"/>
+                <outlet property="employeeId" destination="raR-uk-tO6" id="dcD-QR-mHW"/>
+                <outlet property="employeeImage" destination="Nk9-Rx-jE3" id="pn7-8W-0sS"/>
+                <outlet property="employeeName" destination="t7c-lo-5aS" id="8Jj-cR-3cj"/>
+                <outlet property="employeeSalary" destination="isR-cm-RL9" id="ql9-pt-kwO"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="109.48660714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person.crop.square" catalog="system" width="128" height="114"/>
+    </resources>
+</document>
